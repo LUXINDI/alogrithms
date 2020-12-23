@@ -56,30 +56,22 @@ public class LargestRectangleArea {
         sol.largestRectangleAreaAns(new int[]{2,1,5,6,2,3});
     }
 
-
-
     public int largestRectangleArea2(int[] heights){
-        if (heights == null || heights.length==0) return 0;
-        Stack<Integer> stack = new Stack<>(); //单调递增栈
-        int len = heights.length;
-        int[] newHeights = new int[len+2];
-        for(int i=1;i < len+1;i++){
-            newHeights[i] = heights[i-1];
-        }
-        //出栈时，新元素是出栈元素往后找第一个比他小的元素
-        //出栈后，新的栈顶部是出栈元素向前找第一比他小的元素
         int ans = 0;
-        for(int i=0; i<newHeights.length;i++){
-            while(!stack.isEmpty() && (newHeights[stack.peek()] > heights[i])){
-                int idx = stack.peek();
-                { //出栈
-                    stack.pop();
-                    int right = i-1;
-                    int left = stack.peek();
-                    ans = Math.max(ans, (right-left+1) * newHeights[idx]);
-                }
+        if (heights == null || heights.length ==0) return ans;
+        Stack<Integer>  st = new Stack<>();
+        int[] tmp = new int[heights.length+2];
+        for(int i =1;i<=heights.length;i++){
+            tmp[i] = heights[i-1];
+        }
+        for(int i = 0;i<tmp.length;i++){
+            while(!st.isEmpty()&&tmp[i]<tmp[st.peek()]){
+                int idx = st.pop();
+                int right = i-1;
+                int left = st.peek()+1;
+                ans = Math.max((right-left+1)*tmp[idx],ans);
             }
-            stack.push(i);
+            st.push(i);
         }
         return ans;
     }
