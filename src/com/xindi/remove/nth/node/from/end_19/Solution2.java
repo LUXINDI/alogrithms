@@ -1,4 +1,4 @@
-package com.xindi.removeNthNodeFromEnd_19;
+package com.xindi.remove.nth.node.from.end_19;
 
 import com.xindi.utils.ListNode;
 
