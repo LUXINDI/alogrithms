@@ -1,5 +1,8 @@
 package com.xindi.remove.duplicates_26;
 
+/**
+ * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/solution/shuang-zhi-zhen-shan-chu-zhong-fu-xiang-dai-you-hu/
+ */
 public class Solution {
     // 0 0 1 1 1 2 3 4 4 5
     // 0 1 1 1 1 2 3 4 4 5
