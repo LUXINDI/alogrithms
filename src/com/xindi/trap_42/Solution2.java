@@ -1,5 +1,7 @@
 package com.xindi.trap_42;
 
+import com.xindi.LargestRectangleArea;
+
 import java.util.Stack;
 
 /**
@@ -20,14 +22,17 @@ public class Solution2 {
                int h = Math.min(height[i],height[topIdx])-height[popIdx];
                int right = i-1;
                int left = topIdx+1;
+               System.out.println("===> i="+i);
+               System.out.println("right:" + right + " left:" + left + " h=" + h);
+               System.out.println("area=" + h*(right-left+1));
                res += h*(right-left+1);
            }
            st.push(i);
        }
        return res;
     }
-    public static void main(String args){
-        Solution sol = new Solution();
-        sol.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1});
+    public static void main(String[] args){
+        Solution2 sol2 = new Solution2();
+        sol2.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,3});
     }
 }
