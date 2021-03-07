@@ -1,5 +1,8 @@
 package com.xindi.offer.minArray_11;
 
+/**
+ * https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/solution/mian-shi-ti-11-xuan-zhuan-shu-zu-de-zui-xiao-shu-3/
+ */
 public class Solution {
     public int minArray(int[] numbers){
         if (numbers==null || numbers.length==0 ) return -1;
@@ -21,6 +24,6 @@ public class Solution {
 
     public static void main(String[] args){
         Solution sol = new Solution();
-        sol.minArray(new int[]{1,3,5});
+        sol.minArray(new int[]{1,1,1,0,1});
     }
 }
