@@ -1,4 +1,4 @@
-package com.xindi.offer.twoPointers.getKthFromEnd_22.findContinuousSequence_57;
+package com.xindi.offer.twoPointers.findContinuousSequence_57;
 
 import java.util.ArrayList;
 import java.util.List;
