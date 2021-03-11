@@ -1,4 +1,4 @@
-package com.xindi.firstUniqChar_50;
+package com.xindi.offer.firstUniqChar_50;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

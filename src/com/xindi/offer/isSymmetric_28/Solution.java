@@ -1,4 +1,4 @@
-package com.xindi.isSymmetric_28;
+package com.xindi.offer.isSymmetric_28;
 
 import com.xindi.utils.TreeNode;
 

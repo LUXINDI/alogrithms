@@ -1,6 +1,4 @@
-package com.xindi.majorityElement_39;
-
-import java.util.Random;
+package com.xindi.offer.majorityElement_39;
 
 // 看答案写的
 // reference：https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/solution/mian-shi-ti-39-shu-zu-zhong-chu-xian-ci-shu-chao-3/
