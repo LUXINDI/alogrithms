@@ -79,6 +79,7 @@ public class SortIntegers {
         int[] B = {5,90,0,-1,-5,88,90,100,45};
         int[] temp = new int[B.length];
         sortTest.mergeSort(B, 0, B.length-1, temp);
+        printArray(temp);
     }
 
 }
