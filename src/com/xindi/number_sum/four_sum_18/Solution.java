@@ -1,4 +1,4 @@
-package com.xindi.twopointers.four.sum_18;
+package com.xindi.number_sum.four_sum_18;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.xindi.twopointers.three.sum_15;
+package com.xindi.number_sum.three_sum_15;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,6 +13,8 @@ class Solution {
         for(int i=0;i<nums.length-2;i++){
             //已经排序好
             if (nums[i]>0) return res;
+            //注意因为有重复值，有两处需要处理
+            //第一处
             if (i>0 && nums[i] == nums[i-1]) continue;
             int left = i+1;
             int right = nums.length-1;
@@ -26,6 +28,7 @@ class Solution {
                     res.add(curRes);
                     left ++;
                     right --;
+                    //第二处
                     while(left < right && nums[left] == nums[left-1]){
                         left ++;
                     }

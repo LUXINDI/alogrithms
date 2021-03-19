@@ -1,4 +1,4 @@
-package com.xindi.twosum_1;
+package com.xindi.number_sum.twosum_1;
 
 import java.util.Arrays;
 
